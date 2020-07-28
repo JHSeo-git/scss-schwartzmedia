@@ -47,8 +47,9 @@ main {
 }
 
 .products {
-  margin-bottom: 80px;
-  .product {
+  margin-bottom: 40px;
+  .product,
+  .line {
     border-bottom: 1px solid #dadada;
     padding: 20px 0;
     display: grid;
@@ -65,28 +66,57 @@ main {
     img {
       width: 100%;
     }
-    div {
+    .product__container {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-start;
-
-      .product__category {
-        @extend %categoryTitle;
-      }
-      .product__description {
-        @extend %categoryContent;
-      }
-      div {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        .btn {
-          @extend %categoryButton;
-          margin-right: 10px;
-        }
-      }
     }
+    .product__category {
+      @extend %categoryTitle;
+    }
+    .product__description {
+      @extend %categoryContent;
+    }
+  }
+  .line {
+    .product__category {
+      display: inline-block;
+    }
+    .product__category,
+    .product__description,
+    img {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.btn {
+  @extend %categoryButton;
+  margin-right: 10px;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-bottom: 120px;
+  .contact__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .contact__title {
+    @extend %categoryTitle;
+    margin-bottom: 40px;
+  }
+  .contact__description {
+    @extend %categoryContent;
+    margin-bottom: 40px;
   }
 }
