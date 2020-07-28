@@ -4,7 +4,8 @@
 
 Practice to nomadcoder clone project
 
-- [https://paint-box.com/](https://paint-box.com/)
+- site : https://jhseo-git.github.io/scss-schwartzmedia/
+- target : [https://schwartzmedia.com.au/](https://schwartzmedia.com.au/)
 
 ## To Clone:
 
