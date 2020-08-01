@@ -4,7 +4,7 @@
 
 Practice to nomadcoder clone project
 
-- site : https://jhseo-git.github.io/scss-schwartzmedia/
+- demo : https://jhseo-git.github.io/scss-schwartzmedia/
 - target : [https://schwartzmedia.com.au/](https://schwartzmedia.com.au/)
 
 ## To Clone:
